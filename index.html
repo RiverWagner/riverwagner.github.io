@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>My Site</title>
+
+    <title>River's Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght,MONO@200..800,1&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<h1>Hello world</h1>
-<p>This is my GitHub Pages website.</p>
+
+<audio id="bgMusic" loop>
+    <source src="music/clairdelune.wav" type="audio/wav">
+</audio>
+
+<script>
+
+    document.addEventListener("click", function () {
+
+        document.getElementById("bgMusic").play();
+
+    }, { once: true });
+
+</script>
+
+<div class="sidebar">
+
+    <h2>Folders</h2>
+
+    <h3>General Chitchat</h3>
+
+    <a
+            href="posts/general-chitchat/first-post.html"
+            target="contentFrame">
+
+        First Post
+
+    </a>
+<!--
+    <h3>Devlogs</h3>
+
+    <a
+            href="posts/devlogs/game-engine-development/introduction.html"
+            target="contentFrame">
+
+        Game Engine Development
+
+    </a>
+-->
+</div>
+
+<iframe
+        name="contentFrame"
+        src="home.html"
+        class="contentFrame">
+</iframe>
+
 </body>
 </html>
